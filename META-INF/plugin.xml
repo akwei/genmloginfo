@@ -1,0 +1,48 @@
+<idea-plugin version="2">
+    <id>com.huofu.plugins.genmloginfo</id>
+    <name>GenMethodLogInfo</name>
+    <version>1.1</version>
+    <vendor email="yuanwei@5wei.com" url="http://www.5wei.com">5wei</vendor>
+
+    <description><![CDATA[
+      生成方法信息，在GOD后台进行方法监控使用.<br>
+    ]]></description>
+
+    <change-notes><![CDATA[
+        1.1 - 修改jdk最低支持版本为 1.6
+        1.0 - 第一版
+    ]]>
+    </change-notes>
+
+    <!-- please see https://confluence.jetbrains.com/display/IDEADEV/Build+Number+Ranges for description -->
+    <idea-version since-build="2"/>
+
+    <!-- please see https://confluence.jetbrains.com/display/IDEADEV/Plugin+Compatibility+with+IntelliJ+Platform+Products
+         on how to target different products -->
+    <!-- uncomment to enable plugin in all products
+    <depends>com.intellij.modules.lang</depends>
+    -->
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+    </extensions>
+
+    <application-components>
+        <!-- Add your application components here -->
+    </application-components>
+
+    <project-components>
+        <!-- Add your project components here -->
+    </project-components>
+
+    <actions>
+        <!-- Add your actions here -->
+        <group id="GenMethodLogInfoGroup">
+            <add-to-group group-id="EditorPopupMenu" anchor="last"/>
+            <separator/>
+            <action id="genMethodLogInfoGenAction" class="com.huofu.plugins.genmloginfo.action.GenAction" text="Gen method log info" description="gen method log info">
+            </action>
+            <separator/>
+        </group>
+    </actions>
+</idea-plugin>
