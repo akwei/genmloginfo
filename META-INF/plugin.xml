@@ -1,7 +1,7 @@
 <idea-plugin version="2">
     <id>com.huofu.plugins.genmloginfo</id>
     <name>GenMethodLogInfo</name>
-    <version>1.1</version>
+    <version>1.2</version>
     <vendor email="yuanwei@5wei.com" url="http://www.5wei.com">5wei</vendor>
 
     <description><![CDATA[
@@ -9,13 +9,14 @@
     ]]></description>
 
     <change-notes><![CDATA[
+        1.2 - 增加mock方法的命令生成
         1.1 - 修改jdk最低支持版本为 1.6
         1.0 - 第一版
     ]]>
     </change-notes>
 
     <!-- please see https://confluence.jetbrains.com/display/IDEADEV/Build+Number+Ranges for description -->
-    <idea-version since-build="2"/>
+    <idea-version since-build="3"/>
 
     <!-- please see https://confluence.jetbrains.com/display/IDEADEV/Plugin+Compatibility+with+IntelliJ+Platform+Products
          on how to target different products -->
@@ -40,8 +41,10 @@
         <group id="GenMethodLogInfoGroup">
             <add-to-group group-id="EditorPopupMenu" anchor="last"/>
             <separator/>
-            <action id="genMethodLogInfoGenAction" class="com.huofu.plugins.genmloginfo.action.GenAction" text="Gen method log info" description="gen method log info">
-            </action>
+            <action id="genMethodLogInfoGenAction" class="com.huofu.plugins.genmloginfo.action.GenAction"
+                    text="Gen method log info" description="gen method log info"/>
+            <action id="genMethodLogInfoGenMockAction" class="com.huofu.plugins.genmloginfo.action.GenMockAction"
+                    text="Gen mock cmd" description="gen mock cmd"/>
             <separator/>
         </group>
     </actions>
