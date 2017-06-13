@@ -17,7 +17,7 @@ public class GenMockAction extends BaseCopyAction {
                 "ex_redo=true\n" +
                 "ex_after=true\n" +
                 "errorCode=110\n" +
-                "errorMessage=测试异常\n" +
+                "message=测试异常\n" +
                 "";
     }
 }
