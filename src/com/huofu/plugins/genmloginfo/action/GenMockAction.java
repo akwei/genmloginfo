@@ -13,7 +13,9 @@ public class GenMockAction extends BaseCopyAction {
         return "cmd=mock-ex\n" +
                 "n=" + methodInfo + "\n" +
                 "ex_name=org.apache.thrift.TException\n" +
-                "sp_sleep_sec=10\n" +
+                "ex_sleep=10\n" +
+                "ex_redo=true\n" +
+                "ex_after=true\n" +
                 "errorCode=110\n" +
                 "errorMessage=测试异常\n" +
                 "";
