@@ -10,7 +10,10 @@ import com.huofu.plugins.genmloginfo.base.BaseCopyAction;
 public class GenMockAction extends BaseCopyAction {
 
     public String createMethodLogInfo(String methodInfo) {
-        return "cmd=mock-ex\n" +
+        return "cmd=mock\n" +
+                "act=switch\n" +
+                "act=mock\n" +
+                "act=clear\n" +
                 "n=" + methodInfo + "\n" +
                 "ex_name=org.apache.thrift.TException\n" +
                 "ex_sleep=10\n" +
