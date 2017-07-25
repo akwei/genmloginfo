@@ -11,6 +11,7 @@ public class GenAction extends BaseCopyAction {
 
     public String createMethodLogInfo(String methodInfo) {
         return "cmd=log-method\n" +
+                "module=\n" +
                 "act=switch\n" +
                 "act=add\n" +
                 "act=clear\n" +
