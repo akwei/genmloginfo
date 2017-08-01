@@ -12,6 +12,7 @@ public class GenMockAction extends BaseCopyAction {
     public String createMethodLogInfo(String methodInfo) {
         return "cmd=mock\n" +
                 "module=\n" +
+                "env=\n" +
                 "act=switch\n" +
                 "act=mock\n" +
                 "act=clear\n" +
