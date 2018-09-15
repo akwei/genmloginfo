@@ -1,14 +1,15 @@
 <idea-plugin>
     <id>com.huofu.plugins.genmloginfo</id>
     <name>GenMethodLogInfo</name>
-    <version>1.7</version>
-    <vendor email="yuanwei@5wei.com" url="http://www.5wei.com">5wei</vendor>
+    <version>2.0</version>
+    <vendor email="akwei_yuan@163.com.com">megaease</vendor>
 
     <description><![CDATA[
       生成方法信息，在GOD后台进行方法监控使用.<br/>
     ]]></description>
 
     <change-notes><![CDATA[
+        2.0 - 采用新方法<br/>
         1.7 - 增加环境变量参数<br/>
         1.6 - 增加环境变量参数<br/>
         1.5 - 升级所有命令格式<br/>
@@ -21,7 +22,7 @@
     </change-notes>
 
     <!-- please see https://confluence.jetbrains.com/display/IDEADEV/Build+Number+Ranges for description -->
-    <idea-version since-build="8"/>
+    <idea-version since-build="9"/>
 
     <!-- please see https://confluence.jetbrains.com/display/IDEADEV/Plugin+Compatibility+with+IntelliJ+Platform+Products
          on how to target different products -->
@@ -46,8 +47,6 @@
         <group id="GenMethodLogInfoGroup">
             <add-to-group group-id="EditorPopupMenu" anchor="last"/>
             <separator/>
-            <action id="genMethodLogInfoGenAction" class="com.huofu.plugins.genmloginfo.action.GenAction"
-                    text="Gen method log info" description="gen method log info"/>
             <action id="genMethodLogInfoGenMockAction" class="com.huofu.plugins.genmloginfo.action.GenMockAction"
                     text="Gen mock cmd" description="gen mock cmd"/>
             <separator/>
